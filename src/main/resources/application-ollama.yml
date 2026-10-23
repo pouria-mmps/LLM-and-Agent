@@ -1,0 +1,9 @@
+﻿# Reuse the existing OpenAI client against Ollama's local compatibility endpoint.
+# This is a dummy value: local Ollama does not require an OpenAI API key.
+spring:
+  ai:
+    openai:
+      base-url: ${OLLAMA_BASE_URL:http://localhost:11434/v1}
+      api-key: ollama
+      chat:
+        model: ${OLLAMA_MODEL:qwen3:4b}

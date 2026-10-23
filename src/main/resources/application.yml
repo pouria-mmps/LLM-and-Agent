@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ai-playground
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        model: gpt-5-mini
